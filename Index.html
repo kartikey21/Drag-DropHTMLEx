@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title></title>
+
+    <style>
+        h1{
+            text-align:center;
+        }
+
+        #fig1, #fig2 {
+            float: left;
+            width: 220px;
+            height: 220px;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid red;
+        }
+
+
+    </style>
+
+    <script>
+
+        function allowDropThis(i) {
+
+            i.preventDefault();
+
+        }
+
+        function dragThis(i) {
+
+            i.dataTransfer.setData("book", i.target.id);
+
+        }
+
+        function dropThis(i) {
+
+            i.preventDefault();
+
+            var data = i.dataTransfer.getData("book");
+
+            i.target.appendChild(document.getElementById(data));
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Drag and Drop Example in HTML-5</h1>
+
+    <div id="fig1" ondrop="dropThis(event)" ondragover="allowDropThis(event)">
+
+        <img src="Images/mahabharata.jpg"
+             draggable="true"
+             ondragstart="dragThis(event)"
+             id="drag1"
+             height="220">
+
+    </div>
+
+    <div id="fig2" ondrop="dropThis(event)" ondragover="allowDropThis(event)"></div>
+
+</body>
+
+</html>

@@ -67,6 +67,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\adam.jpg" />
+    <Content Include="images\fourDervishes.jpg" />
+    <Content Include="images\hamlet.jpg" />
+    <Content Include="images\ice &amp; fire.jpg" />
+    <Content Include="images\inglorious.jpg" />
+    <Content Include="images\macbeth.jpg" />
+    <Content Include="images\mahabharata.jpg" />
+    <Content Include="images\new india.PNG" />
+    <Content Include="Index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
